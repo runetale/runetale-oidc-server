@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html class="antialiased [font-feature-settings:'ss01']">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="minimum-scale=1, initial-scale=1, width=device-width maximum-scale=1, shrink-to-fit=no user-scalable=no"
+    />
+
+    <meta property="og:image" content="/assets/runetale-og.png" />
+    <meta
+      name="twitter:title"
+      content="Runetale | Your secure internet ready-to-connect"
+    />
+    <meta
+      name="twitter:description"
+      content="Runetale transforms corporate network security and remote collaboration, making it more secure, faster, and enjoyable in minutes."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="/assets/runetale-og.png" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="thumbnail" content="/assets/runetale-favicon.svg" />
+    <link href="/css/output.css" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="/assets/runetale-favicon.svg" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/runetale-favicon.svg"
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/fonts/GeistVariableVF.woff2"
+      crossorigin=""
+    />
+
+    <title id="title-metadata">Runetale Login</title>
+
+    <style>
+      html {
+        box-sizing: border-box;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      @font-face {
+        font-family: "Geist";
+        font-weight: 100 200 300 400 500 600 700 800 900;
+        font-style: normal;
+        font-display: swap;
+        src: url("/fonts/GeistVariableVF.woff2") format("woff2-variations");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+    </style>
+
+    <script type="text/javascript" defer>
+      // set default language from browser
+      const browserLang =
+        (navigator.languages && navigator.languages[0]) || navigator.language
+      const isJapaneseChecker = browserLang.startsWith("ja") ? true : false
+      window.globalIsJapaneseChecker = isJapaneseChecker
+
+      // update html lang attribute
+      document.documentElement.lang = browserLang
+    </script>
+
+    <script type="text/javascript" defer>
+      document.addEventListener("DOMContentLoaded", function () {
+        const titleMetadata = document.getElementById("title-metadata")
+        const welcomeMessage = document.getElementById("welcome-message")
+        const welcomeSubMessage = document.getElementById("welcome-sub-message")
+
+        if (titleMetadata) {
+          titleMetadata.textContent = window.globalIsJapaneseChecker
+            ? "Runetaleログイン"
+            : "Runetale Login"
+        }
+        if (welcomeMessage) {
+          welcomeMessage.textContent = window.globalIsJapaneseChecker
+            ? "Runetaleへようこそ"
+            : "Welcome to Runetale"
+        }
+        if (welcomeSubMessage) {
+          welcomeSubMessage.textContent = window.globalIsJapaneseChecker
+            ? "お使いのSSOでログインしてください。クレジットカード登録なく、利用開始できます。"
+            : "Continue with your identity provider. No credit card required to get started."
+        }
+
+        if (window.globalIsJapaneseChecker) {
+          termsLink.href = "https://www.runetale.com/jp/terms/"
+          privacyLink.href = "https://www.runetale.com/jp/privacy"
+        } else {
+          termsLink.href = "https://www.runetale.com/terms"
+          privacyLink.href = "https://www.runetale.com/privacy"
+        }
+      })
+    </script>
+  </head>
+
+  <body>
+    <main>
+      <div
+        class="h-screen font-geist w-screen m-auto flex flex-col justify-center items-center p-8"
+      >
+        <header class="mb-8">
+          <svg
+            class="w-56 h-auto"
+            viewBox="0 0 186 33"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 10.8412C0 6.52203 2.54191 4.48901 6.40287 4.48901H16.8718L16.8211 10.5881H7.57255V31.6753H0V10.8412Z"
+              fill="#3A3A3A"
+            />
+            <path
+              d="M44.7671 31.5564H38.8225L38.263 26.5764H37.8553C36.4325 30.0322 33.5361 32.0653 29.0144 32.0653C23.3229 32.0653 19.8164 28.2043 19.8164 21.9533V4.5752H26.2699V20.0722C26.2699 23.9838 27.6928 26.627 31.9613 26.627C35.8729 26.627 38.3136 24.1889 38.3136 19.819V4.5752H44.7671V31.5564Z"
+              fill="#3A3A3A"
+            />
+            <path
+              d="M49.375 4.57496H55.269L55.8285 9.30179H56.2361C57.659 6.10162 60.6566 4.0686 65.1784 4.0686C70.9204 4.0686 74.4269 7.92957 74.4269 14.1805V31.5587H67.9734V16.0591C67.9734 12.1475 66.4999 9.50433 62.2314 9.50433C58.2691 9.50433 55.8285 11.9424 55.8285 16.3123V31.5561H49.375V4.57496Z"
+              fill="#3A3A3A"
+            />
+            <path
+              d="M77.4766 19.7175V16.7199C77.4766 8.641 82.5401 4.0686 90.062 4.0686C97.8371 4.0686 102.392 8.69163 102.392 16.2642V19.6188H83.9301V20.991C83.9301 23.8367 85.4365 26.9863 90.1127 26.9863C93.4166 26.9863 95.3307 25.5634 95.9915 23.1759H102.293C101.582 28.561 96.9738 32.0675 90.1152 32.0675C82.492 32.0675 77.4791 27.3939 77.4791 19.7201L77.4766 19.7175ZM96.0396 15.3477C95.9383 11.231 93.8217 9.04608 89.9582 9.04608C85.996 9.04608 84.0288 11.4335 83.9275 15.3477H96.0396Z"
+              fill="#3A3A3A"
+            />
+            <path
+              d="M104.441 5.38787H109.269V0.000244141H115.723V5.38787H121.108V10.6717H115.723V26.3738H121.161V31.5563H114.86C110.897 31.5563 109.269 29.6752 109.269 26.0168V10.6717H104.441V5.38787Z"
+              fill="#3A3A3A"
+            />
+            <path
+              d="M134.404 15.6518H140.941V13.8745C140.941 10.725 139.179 9.25149 135.773 9.25149C132.216 9.25149 130.71 10.725 130.505 13.1125H124.661C124.864 7.37038 128.963 4.06641 136.077 4.06641C143.445 4.06641 147.341 7.47165 147.341 14.229V31.5565H142.057L141.65 27.5942H141.191C140.022 30.4399 137.211 32.0653 133.044 32.0653C127.505 32.0653 124.066 28.812 124.066 23.9864C124.066 18.8545 127.284 15.6544 134.399 15.6544L134.404 15.6518ZM130.305 23.832C130.305 25.9157 131.966 27.1866 134.963 27.1866C139.08 27.1866 140.943 25.3055 140.943 22.3585V19.6141H134.963C131.609 19.6141 130.305 21.0369 130.305 23.0193V23.832Z"
+              fill="#3A3A3A"
+            />
+            <path
+              d="M151.379 0.000244141H157.832V31.5563H151.379V0.000244141Z"
+              fill="#3A3A3A"
+            />
+            <path
+              d="M160.762 19.7175V16.7199C160.762 8.641 165.825 4.0686 173.347 4.0686C181.122 4.0686 185.677 8.69163 185.677 16.2642V19.6188H167.215V20.991C167.215 23.8367 168.722 26.9863 173.398 26.9863C176.702 26.9863 178.616 25.5634 179.277 23.1759H185.578C184.867 28.561 180.259 32.0675 173.4 32.0675C165.777 32.0675 160.764 27.3939 160.764 19.7201L160.762 19.7175ZM179.325 15.3477C179.223 11.231 177.107 9.04608 173.243 9.04608C169.281 9.04608 167.314 11.4335 167.213 15.3477H179.325Z"
+              fill="#3A3A3A"
+            />
+          </svg>
+        </header>
+
+        <h1
+          id="welcome-message"
+          class="text-center font-medium text-base lg:text-2xl"
+        >
+          Welcome to Runetale
+        </h1>
+        <h4
+          id="welcome-sub-message"
+          class="text-center text-sm font-normal text-gray-400 mt-1 sm:max-w-[320px]"
+        >
+          Continue with your identity provider. No credit card required.
+        </h4>
+
+        <div class="p-4 mt-4 lg:mt-0 lg:p-8">
+          <div
+            class="mx-auto flex w-full flex-col justify-center space-y-4 sm:w-[320px]"
+          >
+            <button
+              type="button"
+              onclick="location.href='/google'"
+              class="bg-transparent hover:cursor-pointer group hover:bg-gray-50 border border-[#EBEBEB] font-medium rounded-md text-base px-5 py-2.5 text-center inline-flex items-center transition-all me-2 w-full content-center justify-items-center justify-center"
+            >
+              <svg
+                class="w-5 h-5 me-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 14"
+              >
+                <path
+                  fill="#4285F4"
+                  d="M13.5 7.15a7.22 7.22 0 0 0-.119-1.321H6.886v2.503h3.72a3.004 3.004 0 0 1-1.377 1.975v1.625h2.219C12.751 10.8 13.5 9.127 13.5 7.15z"
+                />
+                <path
+                  fill="#34A853"
+                  d="M6.886 13.501c1.857 0 3.423-.575 4.564-1.57l-2.219-1.623c-.617.396-1.414.62-2.342.62-1.797 0-3.32-1.144-3.867-2.682H.732V9.92c1.17 2.196 3.55 3.581 6.154 3.581z"
+                />
+                <path
+                  fill="#FBBC04"
+                  d="M3.02 8.246a3.688 3.688 0 0 1 0-2.49V4.083H.732a6.183 6.183 0 0 0 0 5.839L3.02 8.245z"
+                />
+                <path
+                  fill="#EA4335"
+                  d="M6.886 3.072a3.866 3.866 0 0 1 2.642.974l1.965-1.856C10.25 1.087 8.596.48 6.886.5 4.282.5 1.901 1.884.732 4.081L3.02 5.757c.544-1.54 2.07-2.685 3.866-2.685z"
+                />
+              </svg>
+              <span class="text-base text-[#0A0A0A]">Continue with Google</span>
+            </button>
+
+            <button
+              type="button"
+              onclick="location.href='/microsoft'"
+              class="bg-transparent hover:cursor-pointer hover:bg-gray-50 border border-[#EBEBEB] font-medium rounded-md text-base px-5 py-2.5 text-center inline-flex items-center transition-all me-2 w-full content-center justify-items-center justify-center"
+            >
+              <svg
+                class="w-5 h-5 me-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 14"
+              >
+                <path fill="#F1511B" d="M7.129 7.127H0V0h7.129v7.127z" />
+                <path fill="#80CC28" d="M15 7.127H7.87V0H15v7.127z" />
+                <path fill="#00ADEF" d="M7.129 15H0V7.873h7.129V15z" />
+                <path fill="#FBBC09" d="M15 15H7.87V7.873H15V15z" />
+              </svg>
+              <span class="text-base text-[#0A0A0A]"
+                >Continue with Microsoft</span
+              >
+            </button>
+            <button
+              type="button"
+              onclick="location.href='/github'"
+              class="bg-transparent hover:bg-gray-50 hover:cursor-pointer border border-[#EBEBEB] font-medium rounded-md text-base px-5 py-2.5 text-center inline-flex items-center transition-all me-2 w-full content-center justify-items-center justify-center"
+            >
+              <span>
+                <svg
+                  viewBox="0 0 438.549 438.549"
+                  class="w-5 h-5 me-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M409.132 114.573c-19.608-33.596-46.205-60.194-79.798-79.8-33.598-19.607-70.277-29.408-110.063-29.408-39.781 0-76.472 9.804-110.063 29.408-33.596 19.605-60.192 46.204-79.8 79.8C9.803 148.168 0 184.854 0 224.63c0 47.78 13.94 90.745 41.827 128.906 27.884 38.164 63.906 64.572 108.063 79.227 5.14.954 8.945.283 11.419-1.996 2.475-2.282 3.711-5.14 3.711-8.562 0-.571-.049-5.708-.144-15.417a2549.81 2549.81 0 01-.144-25.406l-6.567 1.136c-4.187.767-9.469 1.092-15.846 1-6.374-.089-12.991-.757-19.842-1.999-6.854-1.231-13.229-4.086-19.13-8.559-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-.951-2.568-2.098-3.711-3.429-1.142-1.331-1.997-2.663-2.568-3.997-.572-1.335-.098-2.43 1.427-3.289 1.525-.859 4.281-1.276 8.28-1.276l5.708.853c3.807.763 8.516 3.042 14.133 6.851 5.614 3.806 10.229 8.754 13.846 14.842 4.38 7.806 9.657 13.754 15.846 17.847 6.184 4.093 12.419 6.136 18.699 6.136 6.28 0 11.704-.476 16.274-1.423 4.565-.952 8.848-2.383 12.847-4.285 1.713-12.758 6.377-22.559 13.988-29.41-10.848-1.14-20.601-2.857-29.264-5.14-8.658-2.286-17.605-5.996-26.835-11.14-9.235-5.137-16.896-11.516-22.985-19.126-6.09-7.614-11.088-17.61-14.987-29.979-3.901-12.374-5.852-26.648-5.852-42.826 0-23.035 7.52-42.637 22.557-58.817-7.044-17.318-6.379-36.732 1.997-58.24 5.52-1.715 13.706-.428 24.554 3.853 10.85 4.283 18.794 7.952 23.84 10.994 5.046 3.041 9.089 5.618 12.135 7.708 17.705-4.947 35.976-7.421 54.818-7.421s37.117 2.474 54.823 7.421l10.849-6.849c7.419-4.57 16.18-8.758 26.262-12.565 10.088-3.805 17.802-4.853 23.134-3.138 8.562 21.509 9.325 40.922 2.279 58.24 15.036 16.18 22.559 35.787 22.559 58.817 0 16.178-1.958 30.497-5.853 42.966-3.9 12.471-8.941 22.457-15.125 29.979-6.191 7.521-13.901 13.85-23.131 18.986-9.232 5.14-18.182 8.85-26.84 11.136-8.662 2.286-18.415 4.004-29.263 5.146 9.894 8.562 14.842 22.077 14.842 40.539v60.237c0 3.422 1.19 6.279 3.572 8.562 2.379 2.279 6.136 2.95 11.276 1.995 44.163-14.653 80.185-41.062 108.068-79.226 27.88-38.161 41.825-81.126 41.825-128.906-.01-39.771-9.818-76.454-29.414-110.049z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="text-base text-[#0A0A0A]">Continue with Github</span>
+            </button>
+
+            <footer class="text-center text-xs font-light text-gray-400 mt-4">
+              By clicking the button above, you agree to the
+              <a
+                href="https://runetale.com/terms"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-[#0070f3]"
+                id="termsLink"
+                >Terms of Service</a
+              >
+              and
+              <a
+                href="https://runetale.com/privacy"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-[#0070f3]"
+                id="privacyLink"
+                >Privacy Policy</a
+              >
+              of Runetale.
+            </footer>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

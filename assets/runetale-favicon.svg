@@ -1,0 +1,12 @@
+<svg width="16" height="16" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+.bg { fill: white; }
+.icon { fill: #000000; }
+@media (prefers-color-scheme: dark) {
+  .bg { fill: #191E1E; }
+  .icon { fill: #E8E4DC; }
+}
+</style>
+<rect class="bg" width="220" height="220" rx="30" fill="white"/>
+<path class="icon" d="M77 81.09C77 64.03 87.04 56 102.29 56H143.64L143.44 80.09H106.91V163.38H77V81.09Z" fill="black"/>
+</svg>

@@ -1,0 +1,50 @@
+version: "3.9"
+
+services:
+  rune_auth:
+    container_name: rune_auth
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    ports:
+      - "5556:5556"
+    command:
+      - /docker-entrypoint.sh
+    restart: always
+    profiles:
+      - general
+
+  rune_auth_migrate:
+    container_name: rune_auth_migrate
+    build:
+      context: .
+      dockerfile: Dockerfile.db
+    env_file:
+      - .env
+    command:
+      - /docker-entrypoint-db.sh
+    depends_on:
+      - postgres_runeoidc
+    profiles:
+      - db
+
+  postgres_runeoidc:
+    image: postgres:14
+    hostname: postgres_runeoidc
+    container_name: postgres_runeoidc
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5433:5433"
+    command: -p 5433
+    volumes:
+      - postgres_runeoidc:/var/lib/postgresql/data
+    restart: always
+    profiles:
+      - db
+
+volumes:
+  postgres_runeoidc:
